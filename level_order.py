@@ -1,9 +1,23 @@
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+
+'''
+Approach:
+get the root in the queue.
+
+Keep track of the size of the queue.
+
+If left and right of the current node is not null, keep adding to the queue.
+
+Maintain a list of lists, to capture the each level order traversal
+
+
+# Time complexity: O(n) --> The  number of nodes, as we go over every single node.
+# Space complecity O(n) --> Just to maintain the queue,
+
+# Did this code successfully run on Leetcode : Yes
+# Any problem you faced while coding this : No
+
+'''
+
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
 
@@ -37,6 +51,11 @@ class Solution:
             final_res.append(int_res)
 
         return final_res
+
+
+
+
+
 
 
 

@@ -1,3 +1,21 @@
+
+
+'''
+Approach:
+You have to identify Independent and dependent courses, and you have to solve the problem accordingly.
+
+It's little tricky but some white boarding did help.
+
+
+# Time complexity: O(n) --> The  number of nodes, as we go over every single node.
+# Space complecity :O(n), Is actual space complexity (O(n)+O(n), one for hash_map and one for queue) Little confused, as we have to maintain queue and I am also using hash_map/dict as well.
+
+
+# Did this code successfully run on Leetcode : Yes
+# Any problem you faced while coding this : Yes, just on the space complexity.
+
+'''
+
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
 
